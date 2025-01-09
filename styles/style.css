@@ -117,4 +117,45 @@ nav h1 {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
-/* about section */
+#about_me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; 
+}
+
+#about_me .about_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8F3;
+  min-width: 1000px;
+  padding: 100px;
+}
+#about_me .about_content {
+  background-color: #fff;
+  border: 1px solid var(--dark-color);
+  padding: 0 1rem 0 1rem;
+  width: 750px;
+}
+#about_me .about_content h1{
+  color: var(--dark-color);
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+#about_me .about_container .about_content .aboutText{
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+#sub_about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sub_about p{
+  font-weight: bolder;
+  color: var(--dark-color);
+}
