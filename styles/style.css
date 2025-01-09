@@ -159,3 +159,41 @@ nav h1 {
   font-weight: bolder;
   color: var(--dark-color);
 }
+#services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; 
+  max-width: 1000px;
+  margin: 0 auto ;
+}
+#services_title{
+  font-weight: bolder;
+  color: var(--dark-color);
+}
+#service_des{
+  max-width: 700px;
+  text-align: center;
+  margin: 2rem 0;
+  line-height: 1.7rem;
+  opacity: 0.5;
+}
+#service_cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#service_cards .card{
+ flex: 1;
+ box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1); 
+ padding: 1rem;
+ cursor: pointer  ;
+}
+#service_cards .card h1 ,img,p{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.4rem;
+}
