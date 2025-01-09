@@ -21,6 +21,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -34,6 +35,15 @@ a {
   font-weight: bold;
   font-family: inherit;
   cursor: pointer;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; 
+  max-width: 1000px;
+  margin: 0 auto ;
 }
 /* nav Start */
 .header {
@@ -99,15 +109,29 @@ nav h1 {
   margin: 1rem 0;
   opacity: 0.6;
 }
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 150px;
+  gap: 1.5rem;
+  max-height: 660px;
+  position: relative; 
+}
+
 .hero__img {
   flex: 1;
+  position: relative; 
 }
+
 .hero__img img {
-  margin: 0 0 0 50px;
-  padding: 0;
-  position: absolute;
+  position: absolute; 
   bottom: 0;
+  left: 0;
+  margin: 0;
+  max-width: 580px; 
 }
+
 .btns {
   display: flex;
   gap: 1rem;
@@ -166,7 +190,9 @@ nav h1 {
   flex-direction: column;
   height: 100vh; 
   max-width: 1000px;
-  margin: 0 auto ;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 6rem;
 }
 #services_title{
   font-weight: bolder;
@@ -196,4 +222,35 @@ nav h1 {
   margin-bottom: 1rem;
   text-align: left;
   line-height: 1.4rem;
+}
+#resume_area .resume_title{
+  color: var(--dark-color);
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+#resume_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#experiance, #education{
+  flex: 1;
+  margin: 1.3rem;
+}
+#education h2, h3 {
+  color: var(--dark-color);
+  font-weight: bolder ;
+  margin-top: 2rem;
+}
+#education p {
+  opacity: 0.6;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+#education small{
+  opacity: 0.6;
+}
+#education hr{
+  margin-top: 1rem;
 }
