@@ -265,3 +265,53 @@ nav h1 {
 #experiance hr{
   margin-top: 1rem;
 }
+/* footer  */
+footer{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  margin-top: 10rem;
+}
+#footer_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+#info_area{
+  flex: 1;
+}
+.info_title{
+  font-size: 1.8rem;
+  font-weight: bolder ;
+  color: var(--dark-color);
+}
+#info_area p small{
+  color: var(--dark-color);
+  opacity: 0.6;
+}
+#contact_Form{
+  flex: 1;
+}
+.social_icons{
+  display: flex;
+  gap: 1rem;
+  color : var(--btn-Color);
+}
+#contact_Form{
+  display: flex;
+  justify-content: center;
+  align-items: fle;
+  flex-direction: column;
+}
+.contact_title{
+  font-size: 1.8rem;
+  font-weight: bolder ;
+  color: var(--dark-color);
+}
+input[type="email"], input[type="name"],textarea{
+  border: none;
+  background-color: var(--white-color);
+  padding: 1rem;
+  margin: 1rem 0  ;
+  outline: none;
+}
