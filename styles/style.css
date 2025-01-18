@@ -285,18 +285,28 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
   padding: 0 0.9rem;
 }
 #service_cards .card {
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   cursor: pointer;
-  height: 400px;
   justify-content: center;
 }
 .card img {
   max-width: 20%;
+  margin-bottom: 0.9rem;
+  border-radius: 10px;
+}
+#card_content h1{
+font-size: 1rem;
+font-weight: bold;
+margin-bottom: 1rem;
+color: var(--btn-Color);
+}
+#card_content p{
+  opacity: 0.8;
 }
 #service_cards:first-child h1 {
   color: #333;
@@ -304,7 +314,7 @@ nav ul li {
 /* responvive for small and medium */
 @media screen and (max-width: 576px) {
   #service_cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -328,7 +338,6 @@ nav ul li {
 #resume_content {
   display: flex;
   justify-content: space-between;
- 
 }
 #experiance,
 #education {
@@ -381,9 +390,23 @@ h3, #education h2  {
 #qualificationBtn{
   margin-top: 3rem;
 }
+/* resposvie code for medium and small devices */
+@media screen and (max-width: 576px) {
+  #resume_content{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 577px) {
+  #resume_content{
+    gap: 4rem;
+    max-width: 90%;
+    margin: auto;
+  }
+}
 .footer {
   background-color: var(--primary-color);
-  padding: 150px;
+  padding: 100px;
+  margin-top: -3rem;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -392,12 +415,32 @@ h3, #education h2  {
 #contact_Form {
   flex: 1;
 }
-
-/* resposvie code for medium and small devices */
-@media screen and (max-width: 576px) {
-  #resume_content{
-    flex-direction: column;
-  }
+.info_title{
+  font-weight: bold;
+  color: var(--dark-color);
 }
-@media screen and (min-width: 577px) and (max-width: 993px) {
+.social_icons{
+  display: flex;
+  gap: 2rem;
+  color: var(--secondary-color);
+}
+#contact_Form{
+  max-width: 100%;
+}
+#contact_Form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact_Form input , textarea{
+  padding: 1rem;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width:576px) {
+  .footer{
+    flex-direction: column;
+    padding: 30px 20px;
+  }
 }
