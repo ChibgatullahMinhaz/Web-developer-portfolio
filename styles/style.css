@@ -27,7 +27,7 @@ a {
   color: inherit;
 }
 .btn {
-  border: none;
+  border: 1px solid ;
   border-radius: var(--border-radius);
   background-color: var(--btn-Color);
   color: var(--white-color);
@@ -36,15 +36,11 @@ a {
   font-family: inherit;
   cursor: pointer;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+.btn:hover{
+  border: 1px solid var(--btn-Color);
+  outline: none;
+  margin: 0;
+
 }
 main {
   margin-top: 7rem;
@@ -218,10 +214,10 @@ nav ul li {
   #about_me .about_container {
     padding: 1rem;
   }
-  #about_me .about_content{
+  #about_me .about_content {
     padding: 1rem;
   }
-  .aboutText{
+  .aboutText {
     text-align: center;
   }
   #sub_about {
@@ -237,10 +233,11 @@ nav ul li {
   #hero {
     margin: 0;
   }
-  .hero_img, .hero_content{
+  .hero_img,
+  .hero_content {
     flex: 1;
   }
-  .hero_content{
+  .hero_content {
     margin-left: 20px;
   }
   .hero_img img {
@@ -255,10 +252,10 @@ nav ul li {
   #about_me .about_container {
     padding: 1rem;
   }
-  #about_me .about_content{
+  #about_me .about_content {
     padding: 1rem;
   }
-  .aboutText{
+  .aboutText {
     text-align: center;
   }
 }
@@ -268,12 +265,10 @@ nav ul li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   max-width: 1000px;
-  margin-top: 10rem;
   margin-right: auto;
   margin-left: auto;
-  
+  margin-top: 3rem;
 }
 #services_title {
   font-weight: bolder;
@@ -291,57 +286,66 @@ nav ul li {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 1rem;
+  padding: 0 0.9rem;
 }
 #service_cards .card {
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   cursor: pointer;
-  height:300px ;
+  height: 400px;
+  justify-content: center;
 }
-.card img{
-max-width: 20%;
+.card img {
+  max-width: 20%;
 }
-#service_cards:first-child h1{
+#service_cards:first-child h1 {
   color: #333;
 }
 /* responvive for small and medium */
 @media screen and (max-width: 576px) {
-  #services{
-    margin-top: 20rem;
+  #service_cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  #service_cards{
-    grid-template-columns: repeat(2,1fr);
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+ 
+  #service_cards {
+    grid-template-columns: repeat(2, 1fr);
   }
- }
- @media screen and (min-width:577px) and (max-width:992px) {
-  #services{
-    margin-top: 25rem;
-  }
-  #service_cards{
-    grid-template-columns: repeat(2,1fr);
-  }
- }
+}
+/* qualification  */
+#resume_area {
+  max-width: 80%;
+  margin:7rem auto;
+  text-align: center;
+}
 #resume_area .resume_title {
-  color: var(--dark-color);
-  font-weight: bolder;
+  font-weight: bold;
+  color: var(--btn-Color);
+  text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 #resume_content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+ 
 }
 #experiance,
 #education {
   flex: 1;
-  margin: 1.3rem;
+  
 }
-#education h2,
-h3 {
+#experiance  {
   color: var(--dark-color);
   font-weight: bolder;
   margin-top: 2rem;
+  text-align: left;
+}
+#education  {
+  color: var(--dark-color);
+  font-weight: bolder;
+  margin-top: 2rem;
+  text-align: left;
 }
 #education p {
   opacity: 0.6;
@@ -355,10 +359,13 @@ h3 {
   margin-top: 1rem;
 }
 #experiance h2,
-h3 {
+h3, #education h2  {
   color: var(--dark-color);
   font-weight: bolder;
   margin-top: 2rem;
+}
+#education h2 ,#experiance h2 {
+  color: var(--secondary-color);
 }
 #experiance p {
   opacity: 0.6;
@@ -371,6 +378,9 @@ h3 {
 #experiance hr {
   margin-top: 1rem;
 }
+#qualificationBtn{
+  margin-top: 3rem;
+}
 .footer {
   background-color: var(--primary-color);
   padding: 150px;
@@ -381,4 +391,13 @@ h3 {
 #info_area,
 #contact_Form {
   flex: 1;
+}
+
+/* resposvie code for medium and small devices */
+@media screen and (max-width: 576px) {
+  #resume_content{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 993px) {
 }
